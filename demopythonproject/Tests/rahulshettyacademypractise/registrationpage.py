@@ -1,7 +1,7 @@
 import re
 from playwright.sync_api import Page, expect
 
-def Registration_page(page:Page):
+def Registration_page(page: Page):
     #constants
     baseURL = "https://rahulshettyacademy.com/"
     #titleOfPage = page.title()
