@@ -3,6 +3,7 @@ from playwright.sync_api import Page, expect
 
 def test_registration_page(page: Page):
     #constants
+    SignUpLink='Sign Up'
     baseURL = "https://rahulshettyacademy.com/"
     titleOfPage = page.title() 
     registerButton = "Register"
@@ -38,6 +39,7 @@ def test_registration_page(page: Page):
     page.get_by_label(passwordTextBox).fill(password)
     page.get_by_text(nextButton).click()
     page.wait_for_timeout(5000)
+
 
 
     
