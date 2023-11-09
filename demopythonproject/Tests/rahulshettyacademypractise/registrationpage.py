@@ -4,6 +4,7 @@ from playwright.sync_api import Page, expect
 def test_registration_page(page: Page):
     #constants
     SignUpLink='Sign Up'
+    signUpButton ="Sign up with email"
     baseURL = "https://rahulshettyacademy.com/"
     titleOfPage = page.title() 
     registerButton = "Register"
