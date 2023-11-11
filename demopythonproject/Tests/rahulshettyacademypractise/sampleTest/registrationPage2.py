@@ -35,6 +35,7 @@ def test_registration_page(page: Page):
     page.locator(passwordTextBox).fill(password)
     page.locator(SignUpSubmmitButton).click()
     page.wait_for_load_state('load')
+    page.wait_for_timeout(10000)
 
     
 
